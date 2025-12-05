@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+.marquee-container {
+    display: flex;
+    position: relative;
+}
+
+.marquee-inner {
+    display: flex;  
+    animation: marquee .00001s linear infinite;
+}
+
+.marquee-inner img {
+    width: 500px;
+}
+
+@keyframes marquee {
+    0% {
+        translate: 0;
+    }
+    100% {
+        translate: -100%;
+    }
+}
+
